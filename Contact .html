@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .contact-info {
+            margin-top: 50px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 20px; /* Adjust icon size */
+            color: #333; /* Adjust icon color */
+        }
+        .social-icons a:hover {
+          color: #007bff; /* Example hover color */
+        }
+
+        #map {
+            height: 400px; /* Adjust map height */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Your Company Name</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+        <div class="row contact-info">
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> 1st Suit ,Muller Building, Rusape</p>
+                <p><strong>Phone:</strong> 0772 344 977</p>
+                <p><strong>Email:</strong> info@pyramidcomputers.com</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!..." width="100%" height="400" frameborder="0" style="border:0" loading="lazy"></iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>  </body>
+
+</html>

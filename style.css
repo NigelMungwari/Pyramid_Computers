@@ -94,6 +94,40 @@ header nav ul li a {
   margin-bottom: 1rem;
 }
 
+/* contact Section */
+.contact {
+  background: #f4f4f4;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.contact-item p {
+  font-style: italic;
+}
+
+.contact-item span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
 /* Testimonials Section */
 .testimonials {
   background: #f4f4f4;
@@ -127,7 +161,7 @@ header nav ul li a {
   display: block;
   margin-top: 1rem;
   font-weight: bold;
-}
+  }
 
 /* Footer */
 footer {

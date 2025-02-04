@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotation Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Quotation Form -->
+    <form id="quotationForm">
+      <h1>Quotation Form</h1>
+
+      <!-- Company Details -->
+      <div class="form-group">
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+      </div>
+
+      <!-- Client Details -->
+      <div class="form-group">
+        <label for="clientName">Client Name:</label>
+        <input type="text" id="clientName" name="clientName" required>
+      </div>
+      <div class="form-group">
+        <label for="clientEmail">Client Email:</label>
+        <input type="email" id="clientEmail" name="clientEmail" required>
+      </div>
+
+      <!-- Services/Products -->
+      <div class="form-group">
+        <label for="service1">Service/Product 1:</label>
+        <input type="text" id="service1" name="service1" required>
+        <label for="quantity1">Quantity:</label>
+        <input type="number" id="quantity1" name="quantity1" required>
+        <label for="price1">Unit Price ($):</label>
+        <input type="number" id="price1" name="price1" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service2">Service/Product 2:</label>
+        <input type="text" id="service2" name="service2">
+        <label for="quantity2">Quantity:</label>
+        <input type="number" id="quantity2" name="quantity2">
+        <label for="price2">Unit Price ($):</label>
+        <input type="number" id="price2" name="price2" step="0.01">
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Generate Quotation</button>
+    </form>
+
+    <!-- Quotation Display -->
+    <div id="quotationDisplay" class="quotation-container hidden">
+      <header>
+        <h1 id="displayCompanyName"></h1>
+      </header>
+
+      <div class="quotation-details">
+        <h2>Quotation</h2>
+        <p><strong>Date:</strong> <span id="displayDate"></span></p>
+      </div>
+
+      <div class="client-details">
+        <h3>To:</h3>
+        <p id="displayClientName"></p>
+        <p id="displayClientEmail"></p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="displayServices">
+          <!-- Rows will be added dynamically -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="total-label">Total</td>
+            <td class="total-amount">$<span id="displayTotal"></span></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="terms">
+        <h3>Terms and Conditions:</h3>
+        <ul>
+          <li>Payment is due within 30 days of the invoice date.</li>
+          <li>Late payments may incur a 5% fee.</li>
+          <li>All prices are in USD.</li>
+          <li>Contact us for any questions or clarifications.</li>
+        </ul>
+      </div>
+
+      <footer>
+        <p>Thank you for choosing <span id="displayFooterCompanyName"></span>!</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>

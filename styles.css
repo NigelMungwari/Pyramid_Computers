@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+#quotationForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Quotation Display */
+.quotation-container {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.quotation-details h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.client-details h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+table tfoot td {
+  font-weight: bold;
+  background-color: #f8f8f8;
+}
+
+.total-label {
+  text-align: right;
+}
+
+.total-amount {
+  color: #333;
+}
+
+.terms {
+  margin-top: 20px;
+}
+
+.terms h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.terms ul {
+  padding-left: 20px;
+  color: #555;
+}
+
+.terms li {
+  margin: 5px 0;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+}

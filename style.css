@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: #007BFF;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: #fff;
+  color: #007BFF;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #f4f4f4;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.testimonial-item p {
+  font-style: italic;
+}
+
+.testimonial-item span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}

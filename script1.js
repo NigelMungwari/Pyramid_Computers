@@ -10,18 +10,14 @@ document.getElementById('quotationForm').addEventListener('submit', function (e)
   const quantity1 = parseFloat(document.getElementById('quantity1').value);
   const price1 = parseFloat(document.getElementById('price1').value);
   const service2 = document.getElementById('service2').value;
-  const quantity2 = parseFloat(document.getElementById('quantity2').value);
-  const price2 = parseFloat(document.getElementById('price2').value);
-  const service3 = document.getElementById('service3').value;
-  const quantity3 = parseFloat(document.getElementById('quantity3').value) || 0;
-  const price3 = parseFloat(document.getElementById('price3').value) || 0;
-
+  const quantity2 = parseFloat(document.getElementById('quantity2').value) || 0;
+  const price2 = parseFloat(document.getElementById('price2').value) || 0;
+  
 
   // Calculate totals
   const total1 = quantity1 * price1;
   const total2 = quantity2 * price2;
-  const total3 = quantity3 * price3;
-  const grandTotal = total1 + total2 + total3;
+  const grandTotal = total1 + total2;
 
   // Display quotation
   document.getElementById('displayCompanyName').textContent = companyName;
@@ -42,22 +38,13 @@ document.getElementById('quotationForm').addEventListener('submit', function (e)
       <td>$${total1.toFixed(2)}</td>
     </tr>
     
+    ${service2 ? `
     <tr>
       <td>2</td>
       <td>${service2}</td>
       <td>${quantity2}</td>
       <td>$${price2.toFixed(2)}</td>
       <td>$${total2.toFixed(2)}</td>
-    </tr>
-    
-  
-    ${service3 ? `
-    <tr>
-      <td>3</td>
-      <td>${service3}</td>
-      <td>${quantity3}</td>
-      <td>$${price3.toFixed(2)}</td>
-      <td>$${total3.toFixed(2)}</td>
     </tr>
     ` : ''}
   `;

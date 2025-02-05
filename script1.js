@@ -5,6 +5,7 @@ document.getElementById('quotationForm').addEventListener('submit', function (e)
   const companyName = document.getElementById('companyName').value;
   const clientName = document.getElementById('clientName').value;
   const clientEmail = document.getElementById('clientEmail').value;
+  const client_no = document.getElementById('client_no').value;
   const service1 = document.getElementById('service1').value;
   const quantity1 = parseFloat(document.getElementById('quantity1').value);
   const price1 = parseFloat(document.getElementById('price1').value);
@@ -22,6 +23,7 @@ document.getElementById('quotationForm').addEventListener('submit', function (e)
   document.getElementById('displayDate').textContent = new Date().toLocaleDateString();
   document.getElementById('displayClientName').textContent = clientName;
   document.getElementById('displayClientEmail').textContent = clientEmail;
+  document.getElementById('displayClient_no').textContent = client_no;
   document.getElementById('displayFooterCompanyName').textContent = companyName;
 
   // Add services to the table

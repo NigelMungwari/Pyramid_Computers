@@ -1,2 +1,2 @@
-# Pyramid_Computers
+# Praise_Tech
 IT Compay website
